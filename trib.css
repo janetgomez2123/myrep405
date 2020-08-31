@@ -1,9 +1,22 @@
 body{
-  background-color: black;
-  color: white;
+  font-family:"Sofia";
+  background-color: lightgray;
+  color: black;
+  text-align: center;
 }
 
 h1{
   font-size: 100px;
   margin bottom: 20px;
+  border: 5px solid black;
+}
+
+h5{
+  font-size: 25px;
+  color: darkgreen;
+}
+
+p{
+  border: 5px solid black;
+  font-size: 20px;
 }
