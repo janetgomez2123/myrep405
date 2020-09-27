@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON.stringify</title>
+</head>
+<body>
+
+<h1>Using JSON.stringify</h1>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"name":"Jeff Bezos", "birth":"1964-1-12", "city":"Albuquerque"}';
+var obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
+</script>
+
+</body>
+</html>

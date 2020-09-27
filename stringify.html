@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>JSON.stringify</title>
-</head>
 <body>
 
-<h1>Using JSON.stringify</h1>
+<h2>Create JSON string from a JavaScript object.</h2>
 
 <p id="demo"></p>
 
 <script>
-var text = '{"name":"Jeff Bezos", "birth":"1964-1-12", "city":"Albuquerque"}';
-var obj = JSON.parse(text);
-obj.birth = new Date(obj.birth);
-document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
+var obj = { name: "John", age: 30, city: "New York" };
+var myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
 </script>
 
 </body>
