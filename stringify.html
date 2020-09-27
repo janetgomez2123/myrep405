@@ -5,12 +5,12 @@
 </head>
 <body>
 
-<h2>Using JSON.stringify</h2>
+<h1>Using JSON.stringify</h1>
 
 <p id="demo"></p>
 
 <script>
-var text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+var text = '{"name":"Jeff Bezos", "birth":"1964-1-12", "city":"Albuquerque"}';
 var obj = JSON.parse(text);
 obj.birth = new Date(obj.birth);
 document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
